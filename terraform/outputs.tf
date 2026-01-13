@@ -44,3 +44,15 @@ output "elasticache_security_group_id" {
   description = "ID of the ElastiCache security group"
   value       = module.security_groups.elasticache_security_group_id
 }
+
+# RDS Outputs
+output "db_endpoint" {
+  description = "RDS database endpoint"
+  value       = module.rds.db_instance_endpoint
+  sensitive   = true
+}
+
+output "db_name" {
+  description = "RDS database name"
+  value       = module.rds.db_instance_name
+}
