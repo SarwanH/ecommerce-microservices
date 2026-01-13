@@ -56,3 +56,14 @@ output "db_name" {
   description = "RDS database name"
   value       = module.rds.db_instance_name
 }
+
+# DynamoDB Outputs
+output "cart_table_name" {
+  description = "DynamoDB cart table name"
+  value       = module.dynamodb.cart_table_name
+}
+
+output "inventory_table_name" {
+  description = "DynamoDB inventory table name"
+  value       = module.dynamodb.inventory_table_name
+}

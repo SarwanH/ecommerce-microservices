@@ -20,3 +20,9 @@ module "rds" {
   security_group_id = module.security_groups.rds_security_group_id
   db_password       = var.db_password
 }
+
+module "dynamodb" {
+  source = "./modules/dynamodb"
+  
+  project_name = var.project_name
+}
