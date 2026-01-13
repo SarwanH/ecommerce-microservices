@@ -1,3 +1,4 @@
+# VPC Outputs
 output "vpc_id" {
   description = "ID of the VPC"
   value       = module.vpc.vpc_id
@@ -21,4 +22,25 @@ output "private_subnet_ids" {
 output "data_subnet_ids" {
   description = "IDs of data subnets"
   value       = module.vpc.data_subnet_ids
+}
+
+# Security Group Outputs
+output "alb_security_group_id" {
+  description = "ID of the ALB security group"
+  value       = module.security_groups.alb_security_group_id
+}
+
+output "ecs_security_group_id" {
+  description = "ID of the ECS security group"
+  value       = module.security_groups.ecs_security_group_id
+}
+
+output "rds_security_group_id" {
+  description = "ID of the RDS security group"
+  value       = module.security_groups.rds_security_group_id
+}
+
+output "elasticache_security_group_id" {
+  description = "ID of the ElastiCache security group"
+  value       = module.security_groups.elasticache_security_group_id
 }
