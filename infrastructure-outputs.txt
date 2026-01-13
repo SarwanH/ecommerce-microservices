@@ -1,0 +1,22 @@
+alb_security_group_id = "sg-0e847a6c9529e3040"
+cart_table_name = "ecommerce-microservices-cart"
+data_subnet_ids = [
+  "subnet-0d5402bd39136f059",
+  "subnet-00389ecc8ebc1451c",
+]
+db_endpoint = <sensitive>
+db_name = "ecommerce"
+ecs_security_group_id = "sg-01a1bcb78cb161a95"
+elasticache_security_group_id = "sg-0578612aff51861bc"
+inventory_table_name = "ecommerce-microservices-inventory"
+private_subnet_ids = [
+  "subnet-05bfb3b0a0beccac3",
+  "subnet-0c9c505e393e02524",
+]
+public_subnet_ids = [
+  "subnet-0df9ebcddac20b9b4",
+  "subnet-049f59ea0e962a216",
+]
+rds_security_group_id = "sg-098450eafbcac6566"
+vpc_cidr = "10.0.0.0/16"
+vpc_id = "vpc-0933f249fa512a6c5"
